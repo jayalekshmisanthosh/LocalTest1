@@ -54,24 +54,6 @@
         </execution>
     </executions>
 </plugin>
-
-<plugin> 
-  <groupId>com.oracle.weblogic</groupId> 
-  <artifactId>weblogic-maven-plugin</artifactId> 
-  <version>12.1.3.0.0</version> 
-  <configuration> 
-      <adminurl>t3://localhost:7101</adminurl>
-      <user>weblogic</user> 
-      <password>weblogic123</password> 
-      <upload>true</upload> 
-      <action>deploy</action> 
-      <remote>false</remote> 
-      <verbose>true</verbose> 
-        <source>${project.build.directory}/${project.build.finalName}.${project.packaging}</source> 
-     <name>${project.build.finalName}</name> 
-  </configuration> 
-  </plugin>
-
 		</plugins>
 	</build>
 
